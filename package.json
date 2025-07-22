@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "start:production": "chmod +x ./start-production.sh && ./start-production.sh",
+    "start:production": "node src/index.js",
     "dev": "nodemon --no-colors --ignore logs/ src/index.js | cat",
     "test": "NODE_ENV=test jest",
     "test:unit": "NODE_ENV=test jest --testMatch='**/tests/unit/**/*.test.js'",
